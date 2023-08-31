@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin:3px 5px;
+    /* border:2px solid black; */
+
+}
+
+#logo img{
+    margin:12px 20px 0px 12px;
+    height:75px;
+    /* border:2px solid red; */
+}
+
+#navbar ul{
+    display:flex;
+    list-style:none;
+    /* border:2px solid yellow; */
+
+}
+
+#navbar ul li{
+    margin:23px;
+    /* padding:10px; */
+    /* border:2px solid green; */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display:block;
+    /* border:2px solid violet; */
+    padding:1px 12px;
+    text-decoration: none;
+    color:white;
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Designing Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:24px;
+    margin:0px 344px;
+    height:630px;
+    align-items:center;
+    justify-content:center;
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    background:url('img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;  
+}
+#home p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+}
+/* Services Section */
+#services{
+    height:450px; 
+    margin:23px;
+    display:flex;
+}
+
+#services .box{
+    border:2px solid black;
+    padding:23px;
+    margin:0px 20px 20px 20px;
+    border-radius: 20px;
+    background-color: rgb(227, 227, 248);
+}
+
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+
+/* utility classes */
+.hprimary{
+    font-size:3rem;
+    padding:15px;
+}
+
+.h-secondary{
+    font-size:2.3rem;
+    padding:12px;
+}
+.btn{
+    margin:23px;
+    padding:5px 20px;
+    border-radius: 5px;
+    background-color:rgb(223, 195, 176);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.center{
+    text-align:center;
+}
+.our{
+    margin-top:0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.container{
+    margin-top:0px;
+    /* border:2px solid blueviolet; */
+}
+.para{
+    text-align: center;
+}
+#client{
+    display:flex;
+    align-items: center;
+    margin:12px;
+    /* border:2px solid red; */
+    justify-content: center;
+}
+.container1{
+    text-align: center;
+}
+
+.pic{
+    /* border:2px solid blueviolet; */
+    margin:1px;
+    padding:0px;
+}
+
+.client::before{
+    content:"";
+    position:absolute;
+    background: url('bck.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:40%;
+    width:100%;
+    z-index: -1;
+    opacity:0.5;
+}
+
+.client img{
+    background-color: transparent;
+    height:150px;
+}
+#contactbox{
+    text-align: center;
+    /* border:2px solid red; */
+    margin:12px;
+    padding:12px;
+}
+
+#us{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top:5px;
+    /* border:2px solid blueviolet; */
+}
+#contact{
+    /* border:2px solid yellow; */
+    margin:90px 0px 0px 0px;
+    background-color:black;
+    color:white;
+}
+
+.last{
+    /* border:2px solid white; */
+    padding:5px;
+    margin:5px;
+    font-size: 23px;
+}
